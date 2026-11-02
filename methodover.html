@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+        Method overriding
+          There will be nth number of class with different name and the 
+          function name should be the same then that is called as 
+          method overriding.
+
+         * **/
+
+
+
+        class Animal {
+            sound() {
+                console.log("Animal makes a sound");
+            }
+        }
+
+        class Dog extends Animal {
+            sound() {
+                console.log("Dog barks");
+            }
+        }
+
+        class Cat extends Animal {
+            sound() {
+                console.log("Cat meows");
+            }
+        }
+
+        const animals = [new Dog(), new Cat(), new Animal()];
+
+        animals.forEach((animal) => {
+            animal.sound();
+        });
+
+    </script>
+</body>
+
+</html>

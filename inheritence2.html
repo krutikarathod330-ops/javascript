@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+         *  Multilevel inheritance
+         * 
+         * **/
+
+        //base class
+        class Animal {
+            eat() {
+                document.writeln("Eating...");
+            }
+        }
+
+        //derived base class
+        class Dog extends Animal {
+            bark() {
+                  document.writeln("Barking...");
+            }
+        }
+
+        //derived class
+        class Puppy extends Dog {
+            weep() {
+                document.writeln("Weeping...");
+            }
+        }
+
+        const puppy = new Puppy();
+        puppy.eat();  // Eating...
+        puppy.bark(); // Barking...
+        puppy.weep(); // Weeping...
+
+    </script>
+</body>
+
+</html>

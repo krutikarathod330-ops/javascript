@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+         * Abstraction is an OOP (Object-Oriented Programming) concept that means hiding
+         *  implementation details and showing only the essential features to the user.
+
+For example, when you drive a car, you use the steering wheel, brake, and 
+accelerator without needing to understand the engine's internal working.
+         * 
+         *Encapsulations : it means the class holds variable along with function then that is called as encapsulations
+         * 
+         * Polymorphism means "many forms."
+         * **/
+
+
+        class ATM {
+            balance = 10000;
+
+            checkBalance() {
+                document.writeln(this.balance);
+            }
+
+            withdraw(amount) {
+                if (amount <= this.balance) {
+                    this.balance -= amount;  
+                    document.writeln("Withdrawal successful");
+                } else {
+                    document.writeln("Insufficient balance");
+                }
+            }
+        }
+
+        const atm = new ATM();
+
+        atm.checkBalance(); // 10000
+        atm.withdraw(2000); // Withdrawal successful
+        
+        atm.checkBalance();  
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Recursion</h1>
+
+
+
+<script>
+
+/**
+ * recursion
+ *    the function which call itself then that is called as recursion.
+ * 
+ *    1 * 2 * 3 * 4 * 5
+ * 120
+ * 
+ * 
+ * **/
+function factorial(n)
+{
+   if(n==1)
+   {
+    return 1
+   }
+
+   return n * factorial(n-1)
+}
+
+
+document.write(factorial(5))
+ 
+</script>
+
+</body>
+</html>

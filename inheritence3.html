@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+         * Hierarchical Inheritance
+         * 
+         * **/
+
+         // base class
+        class Animal {
+            eat() {
+                console.log("Eating...");
+            }
+        }
+
+         // derived class
+        class Dog extends Animal {
+            bark() {
+                console.log("Barking...");
+            }
+        }
+        
+         // derived class
+        class Cat extends Animal {
+            meow() {
+                console.log("Meowing...");
+            }
+        }
+
+        const dog = new Dog();
+        dog.eat();
+        dog.bark();
+
+        const cat = new Cat();
+        cat.eat();
+        cat.meow();
+
+    </script>
+</body>
+
+</html>

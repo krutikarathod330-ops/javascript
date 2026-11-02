@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+         * 
+         *  inheritance
+         *     when we inherite one class into another class then 
+         * that is called as inheritance.
+         * 
+         * **/
+
+         // Single inheritance
+         
+         // base class
+        class Animal {
+            eat() {
+                document.write("Eating...");
+            }
+        }
+
+        // derived class
+        class Dog extends Animal {
+            bark() {
+                 document.write("Barking...");
+            }
+        }
+
+        const dog = new Dog();
+        dog.eat();  // Eating...
+        dog.bark(); // Barking...
+
+
+    </script>
+</body>
+
+</html>
